@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta author="Joelson Júnior">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Clone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+</head>
+<body>
+
+    <header>
+        <div class="center">
+
+            <div class="logo left"><img src="images/logo.png"></div>
+
+            <nav class="desktop">
+                <ul class="right">
+                    <li><a href="">Premium</a></li>
+                    <li><a href="">Ajuda</a></li>
+                    <li><a href="">Baixar</a></li>
+                    <li>|</li>
+                    <img class="user" src="images/user.jpg">
+                    <li><a href="">Perfil</a></li>
+                    <li><i class="fa fa-angle-down" aria-hidden="true"></i></li>
+                </ul>
+            </nav>
+
+            <nav class="mobile">
+
+                <div class="btn-menu right"><i class="fa fa-bars"></i></div>
+
+                <ul class="right">
+                    <li><a href="">Premium</a></li>
+                    <li><a href="">Ajuda</a></li>
+                    <li><a href="">Baixar</a></li>
+
+                    <img class="user" src="images/user.jpg">
+                    <li><a href="">Perfil</a></li>
+    
+                </ul>
+            </nav>
+
+            <div class="clear"></div>
+
+        </div><!--center-->
+    </header>
+    
+    <section class="banner-principal">
+        <div class="center">
+            
+            <h2>Vá de Premium. E seja feliz!</h2>
+            <div class="cta-banner">
+                <a href="">iniciar o teste grátis</a>
+            </div>
+
+            <p>* Sujeito a <b>Termos e condições</b>. Válido somente para usuários que ainda não experimentaram o Premium.</p>
+
+            <div class="clear"></div><!--clear-->
+
+        </div><!--center-->
+    </section><!--banner-principal-->
+
+    <section class="chamada-bg">
+        <div class="center">
+
+            <div class="chamada">
+
+                <h2>É música que você quer?</h2>
+                <p>Conheça os melhores lançamentos do momento.</p>
+                <div class="cta-chamada">
+                    <a href="">ABIR O WEB PLAYER</a>
+                </div>
+
+            </div>
+
+        <div class="clear"></div><!--clear-->
+        </div><!--center-->
+    </section><!--chamada-->
+
+    <section class="sons">
+        <div class="center">
+        
+            <div class="w33 left capa">
+                <img src="images/holy.png">
+            </div>
+
+            <div class="w33 left capa">
+                <img src="images/holy.png">
+            </div>
+
+            <div class="w33 left capa">
+                <img src="images/holy.png">
+            </div>
+
+            <div class="w33 left capa">
+                <img src="images/holy.png">
+            </div>
+
+            <div class="w33 left capa">
+                <img src="images/holy.png">
+            </div>
+
+            <div class="w33 left capa">
+                <img src="images/holy.png">
+            </div>
+
+        <div class="clear"></div><!--clear-->
+        </div><!--center-->
+    </section><!--sons-->
+
+    <section class="footer-top">
+        <div class="center">
+
+            <div class="w20 left box-uteis">
+                <div class="logo left"><img src="images/logo.png" alt=""></div>
+            </div>
+
+            <div class="w20 left box-uteis">
+                <h2>Empresa</h2>
+                <p>Sobre</p>
+                <p>Empregos</p>
+                <p>For the Record</p>
+            </div>
+
+            <div class="w20 left box-uteis">
+                <h2>Comunidades</h2>
+                <p>Para Artistas</p>
+                <p>Desenvolvedores</p>
+                <p>Marcas</p>
+                <p>Investidores</p>
+                <p>Fornecedores</p>
+            </div>
+
+            <div class="w20 left box-uteis">
+                <h2>Links úteis</h2>
+                <p>Ajuda</p>
+                <p>Player da Web</p>
+                <p>Aplicativo móvel grátis</p>
+            </div>
+
+            <div class="w20 left box-uteis">
+                <h3><i class="fa fa-instagram"></i></h3>
+                <h3><i class="fa fa-twitter"></i></h3>
+                <h3><i class="fa fa-facebook"></i></h3>
+            </div>
+
+            <div class="clear"></div><!--clear-->
+        </div><!--center-->
+    </section><!--footer-top-->
+
+    <div class="local">
+        <div class="center">
+            <h3 class="right">Brasil <i class="fa fa-heart" aria-hidden="true"></i></h3>
+        </div>
+        <div class="clear"></div>
+    </div>
+
+    <footer>
+        <div class="center">
+            
+            <div class="bottom left">
+                <p>Legal</p>
+                <p>Centro de Privacidade</p>
+                <p>Política de privacidade</p>
+                <p>Cookies</p>
+                <p>Sobre anúncios</p>
+            </div>
+
+            <div class="bottom right">
+                <h2>© 2020 Spotify AB</h2>
+            </div>
+                
+            <div class="clear"></div>    
+        </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script>
+            $('nav.mobile').click(function(){
+		//O que vai acontecer quando clicarmos na nav.mobile!
+		var listaMenu = $('nav.mobile ul');
+
+
+		if(listaMenu.is(':hidden') == true){
+			//fa fa-times
+			//fa fa-bars
+			//var icone =  $('.botao-menu-mobile i');
+			var icone = $('.btn-menu').find('i');
+			icone.removeClass('fa-bars');
+			icone.addClass('fa-times');
+			listaMenu.slideToggle();
+		}
+		else{
+			var icone = $('.btn-menu').find('i');
+			icone.removeClass('fa-times');
+			icone.addClass('fa-bars');
+			listaMenu.slideToggle();
+		}
+	});
+    </script>
+
+</body>
+</html>

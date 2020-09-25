@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* classes auxiliares */
+
+.center{
+    max-width: 1280px;
+    margin: 0 5%;
+}
+
+body{
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.clear{
+    clear: both;
+}
+
+.left{
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
+.w33{
+    width: 33.3%;
+}
+
+.w20{
+    width: 20%;
+}
+
+.w50{
+    width: 50%;
+}
+
+/*  */
+
+header{
+    position: fixed;
+    background: rgba(0,0,0,0.61);
+    width: 100%;
+    padding: 15px 0;
+    z-index: 999;
+}
+
+header img{
+    max-width: 140px;
+}
+
+header li{
+    display: inline-block;
+    margin-left: 33px;
+    color: white;
+}
+
+header ul{
+    top: -10px;
+    position: relative;
+}
+
+header a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+header a:hover{
+    color: #2D46B9;
+}
+
+header i{
+    cursor: pointer;
+}
+
+header .user{
+    max-width: 40px;
+    border-radius: 50%;
+    position: relative;
+    top: 12px;
+    left: 15px;
+}
+
+/* */
+
+.banner-principal{
+    background: rgb(246,203,108);
+    background: radial-gradient(circle, rgba(246,203,108,1) 0%, rgba(243,199,95,1) 50%, rgba(242,174,84,1) 100%);
+    width: 100%;
+    height: 620px;
+}
+
+.banner-principal h2{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+	position: absolute;
+    left: 50%;
+	top: 50%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+}
+
+.banner-principal .cta-banner{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+	transform:translate(-50%,-70%); 
+    -ms-transform:translate(-50%,-70%);
+    width: 350px;
+    height: 60px;
+    background: #1DB954;
+    border-radius: 30px;
+    
+}
+
+.banner-principal .cta-banner a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    font-size: 14px;
+    text-transform: uppercase;
+	position: absolute;
+    left: 50%;
+	top: 50%;
+	transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+}
+
+.cta-banner:hover{
+    background-color: #1ED760;
+}
+
+.banner-principal p{
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    left: 50%;
+	top: 100%;
+	transform:translate(-50%,-100%);
+	-ms-transform:translate(-50%,-100%);
+}
+
+.banner-principal p b{
+    text-decoration: underline;
+}
+
+/*  */
+
+.chamada-bg{
+    margin-top: 60px;
+    text-align: center;
+}
+
+.chamada h2{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.chamada p{
+    font-size: 18px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.cta-chamada{
+    text-align: center;
+	display: inline-block;
+    line-height: 40px;
+    border: 2px solid #999999;
+	text-decoration: none;
+	color: white;
+	font-size: 14px;
+	font-weight: 700;
+    width: 280px;
+    height: 45px;
+	position: relative;
+	top: 10px;
+	border-radius: 40px;
+}
+
+.cta-chamada a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #999999;
+    display: block;
+}
+
+.cta-chamada:hover{
+    background: #999999;
+}
+
+.cta-chamada a:hover{
+    color: white;
+}
+
+/*  */
+
+.sons{
+    margin-top: 70px;
+    margin-bottom: 120px;
+}
+
+.capa img{
+    max-width: 350px;
+    border: 30px solid white;
+}
+
+/*  */
+
+.footer-top{
+    padding: 40px;
+    background: black;
+}
+
+.box-uteis img{
+    max-width: 120px;
+    position: relative;
+    left: 50%;
+}
+
+.box-uteis h2{
+    color: #ccc;
+    font-size: 14px;
+}
+
+.box-uteis p{
+    margin-top: 22px;
+    color: white;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.box-uteis p:hover{
+    color: #1DB954;
+}
+
+.box-uteis h3{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #222;
+    text-align: center;
+}
+
+.box-uteis i{
+    position: relative;
+    top: 12px;
+    color: white;
+    font-size: 25px;
+}
+
+.box-uteis i:hover{
+    color: #1DB954;
+    cursor: pointer;
+}
+
+/*  */
+
+.local{
+    background: black;
+}
+
+.local h3{
+    color: #ccc;
+    font-size: 13px;    
+}
+
+.local h3:hover{
+    color: #1DB954;
+    cursor: pointer;
+}
+
+.local i{
+    color: red;
+    font-size: 13px;
+    margin-right: 92px;
+}
+
+/*  */
+
+footer{
+    padding: 20px 0;
+    background: black;
+}
+
+footer p{
+    display: inline-block;
+    font-size: 11px;
+    margin-right: 12px;
+    font-weight: 700;
+}
+
+footer{
+    color: #ccc;
+}
+
+footer h2{
+    color: #ccc;
+    margin-right: 92px;
+    font-size: 13px;
+}
+
+footer p:hover{
+    color: #1DB954;
+    cursor: pointer;
+}
+
+.mobile{
+    display: none;
+}
+
+@media screen and (max-width: 1024px){
+
+    .capa img{
+        position: relative;
+        left: 50%;
+        transform:translateX(-50%);
+        -ms-transform:translateX(-50%);
+    }
+
+    .btn-menu{
+        display: block;
+        color: white;
+        font-size: 23px;
+        position: relative; 
+        top: 10px;
+    }
+
+    .user{
+       display: none;
+    }
+
+    nav.desktop{
+		display: none;
+	}
+
+	nav.mobile{
+        display: block;
+	}
+
+	nav.mobile a.blue{
+		color: #00bfa5 !important;
+		text-decoration: none;
+	}
+
+	nav.mobile a:hover{
+		transition: 1s;
+		color: #00bfa5;
+	}	
+
+	nav.mobile ul{
+		top: 76.6px;
+		z-index: 3;
+		position: absolute;
+		left: -33px;
+		width: 100% !important;
+		display: none;
+		text-align: center;
+    }
+    
+	nav.mobile li{
+		font-weight: 300;
+		width: 100% !important;
+		display: block;
+		background: rgba(0,0,0,0.61);
+        font-size: 17px;
+        padding: 8px;
+    }
+    
+	nav.mobile li a{
+		display: block;
+		color: white;
+		text-decoration: none;
+    }
+    
+    .cta-banner{
+        margin-top: 30px;
+    }
+
+    .w33{
+        width: 100%;
+    }
+
+    .w20{
+        width: 100%;
+    }
+
+    .box-uteis{
+        margin-top: 12px;
+    }
+
+    .local h3{
+        text-align: center;
+        float: none !important;
+        position: relative;
+        left: 33px;
+    }
+
+    .bottom{
+        float: none;
+        margin-top: 20px;
+    }
+
+    
+}
